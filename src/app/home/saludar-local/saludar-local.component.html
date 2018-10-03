@@ -1,0 +1,19 @@
+<div class="card">
+  <div class="card-header">
+    <h4 class="card-title">Saludar Local</h4>
+  </div>
+  <div class="card-body">
+    <div class="form-group">
+      <input type="text" class="form-control" id="nombre" #locNombre
+        [(ngModel)]="locNombre.value"
+        placeholder="Dime tu nombre">
+    </div>
+    <button type="button" id='btnBorrar' (click)="locNombre.value = ''"
+      class="btn btn-primary">Borrar</button>
+  </div>
+  <div class="card-footer text-muted">
+    <p>Hola {{locNombre.value}}</p>
+  </div>
+</div>
+
+<!-- [value]="nombre" (input)="nombre=$event.value" -->

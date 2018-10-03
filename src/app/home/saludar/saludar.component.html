@@ -1,0 +1,24 @@
+<div class="card">
+  <div class="card-header">
+    <h4 class="card-title">{{titulo}}</h4>
+    <a [href]="empresa">Alten</a>
+  </div>
+  <div class="card-body">
+    <div class="form-group">
+      <input type="text" class="form-control" id="nombre" 
+        [(ngModel)]="nombre"
+        placeholder="Dime tu nombre">
+    </div>
+    <button type="button" id='btnBorrar' (click)="borrar($event)"
+      class="btn btn-primary">Borrar</button>
+  </div>
+  <div class="card-footer text-muted">
+    <p>Hola {{nombre.toUpperCase()}}</p>
+    <p>2 + 3 = {{2+3}}</p>
+    <input type="checkbox" name="" id="" [(ngModel)]="isEsp"> Español
+    <p>{{isEsp ? 'Hola' : 'Hello'}}</p>
+    <p>{{persona?.datos?.fullname?.nombre}}</p>
+  </div>
+</div>
+
+<!-- [value]="nombre" (input)="nombre=$event.value" -->
