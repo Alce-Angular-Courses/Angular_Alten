@@ -13,7 +13,7 @@ export class SaludarLocalComponent implements OnInit {
 
   ngOnInit() {
     console.dir(this.nombre);
-    this.nombre.nativeElement.value = 'Pepe';
+    // this.nombre.nativeElement.value = 'Pepe';
   }
 
 }
