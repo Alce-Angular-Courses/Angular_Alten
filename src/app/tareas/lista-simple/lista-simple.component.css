@@ -1,0 +1,12 @@
+ul {
+    list-style: none;
+}
+
+span {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.completed {
+    text-decoration: line-through;
+}
