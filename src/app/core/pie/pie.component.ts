@@ -2,9 +2,9 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'alt-pie',
-  // templateUrl: './pie.component.html',
-  template: `<footer><p> Alten - Madrid</p></footer>`,
-  styles: ['footer {border-top: 1px solid}']
+  templateUrl: './pie.component.html',
+  styleUrls: ['./pie.component.css']
+
 })
 export class PieComponent implements OnInit {
 
