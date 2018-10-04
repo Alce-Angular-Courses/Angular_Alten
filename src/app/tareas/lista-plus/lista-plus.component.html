@@ -1,0 +1,20 @@
+<div class="card">
+  <div class="card-header">
+    <h4 class="card-title">Tareas por componentes</h4>
+  </div>
+  <div class="card-body">
+      <alt-nueva-tarea (eventAdd)="addTarea($event)"></alt-nueva-tarea>
+  </div>
+  <div *ngIf="aTareas.length" class="card-footer text-muted">
+      <h4 class="card-title">Lista de Tareas</h4>
+      <ul *ngFor="let item of aTareas; let i = index" class="list-group">
+          <alt-tarea 
+            [otarea]="{item: item, i:i}"
+            (eventCompletar)="changeTarea($event)"
+            (eventBorrar)="deleteTarea($event)"
+          ></alt-tarea>
+      </ul>
+  </div>
+</div>
+
+ 
