@@ -1,0 +1,53 @@
+<h4>Formulario DataDriven o Reactivo</h4>
+<form action="">
+    <div class="form-group">
+      <label for="nombre">Nombre</label>
+      <input type="text" class="form-control" name="" id="nombre" aria-describedby="helpId" placeholder="">
+      <small id="helpId" class="form-text text-muted"></small>
+    </div>
+    <div class="form-group">
+        <label for="apellidos">Apellidos</label>
+        <input type="text" class="form-control" name="" id="apellidos" aria-describedby="helpId" placeholder="">
+        <small id="helpId" class="form-text text-muted"></small>
+    </div>
+    <div class="form-group">
+      <label for="email">Correo</label>
+      <input type="email" class="form-control" name="" id="email" aria-describedby="emailHelpId" placeholder="">
+      <small id="emailHelpId" class="form-text text-muted"></small>
+    </div>
+    <div class="form-check">
+      <label class="form-check-label">
+        <input type="checkbox" class="form-check-input" name="" id="isOk" value="checkedValue">
+        Ests de acuerdo con ....
+      </label>
+    </div>
+    <fieldset >
+      <legend>Datos del curso</legend>
+      <div class="form-check">
+        <label class="form-check-label">
+          <input type="radio" class="form-check-input" name="turno" id="" value="checkedValue" checked>
+          Mañana
+        </label>
+      </div>
+      <div class="form-check">
+        <label class="form-check-label">
+          <input type="radio" class="form-check-input" name="turno" id="" value="checkedValue" checked>
+          Tarde
+        </label>
+      </div>
+      <div class="form-check">
+        <label class="form-check-label">
+          <input type="radio" class="form-check-input" name="turno" id="" value="checkedValue" checked>
+          Noche
+        </label>
+      </div>
+      <div class="form-group">
+        <label for="curso">Selecciona el tema</label>
+        <select class="form-control" name="" id="curso">
+          <option>Angular</option>
+          <option>React</option>
+          <option>NodeJS</option>
+        </select>
+      </div>
+    </fieldset>
+  </form>
