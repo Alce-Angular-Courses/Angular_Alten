@@ -4,7 +4,8 @@
 
 export const environment = {
   production: false,
-  urlBase: 'localhost:3000'
+  urlBase: 'localhost:3000',
+  urlUsers: 'https://jsonplaceholder.typicode.com/users'
 };
 
 /*

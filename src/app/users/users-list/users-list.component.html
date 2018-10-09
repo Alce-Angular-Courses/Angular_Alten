@@ -1,0 +1,13 @@
+<div class="form-group">
+  <label for="">Numero de usuario</label>
+  <input type="text" class="form-control" name="userId" id="" 
+    [(ngModel)] = "idUser">
+  <small id="helpId" class="form-text text-muted">Help text</small>
+</div>
+<button type="button" class="btn btn-primary"
+(click)="onBuscar()">Buscar</button>
+<div>
+  <ul>
+    <li *ngFor="let usuario of aUsuarios">{{ usuario | json}}</li>
+  </ul>
+</div>
