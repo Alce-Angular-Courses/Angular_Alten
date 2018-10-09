@@ -3,12 +3,13 @@ import { CommonModule } from '@angular/common';
 import { ContactosComponent } from './contactos.component';
 import { FormDdComponent } from './form-dd/form-dd.component';
 import { FormTdComponent } from './form-td/form-td.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   imports: [
     CommonModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   declarations: [ContactosComponent, FormDdComponent, FormTdComponent]
 })

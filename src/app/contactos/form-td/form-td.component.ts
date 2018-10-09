@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 import { ContactoIF, ContactoModel } from '../../models/contactos.model';
 
 @Component({
@@ -9,6 +9,7 @@ import { ContactoIF, ContactoModel } from '../../models/contactos.model';
 export class FormTdComponent implements OnInit {
   contacto: ContactoIF;
   cursos: Array<any>;
+  @ViewChild('form') form: any;
 
   constructor() {}
 
@@ -19,7 +20,12 @@ export class FormTdComponent implements OnInit {
       {content: ' React', code: 'R01'},
       {content: 'NodeJS', code: 'N01'}
     ];
-    this.contacto.curso = this.cursos[0];
+    this.contacto.curso = this.cursos[2];
   }
+  onEnviar(event) {
+    event.preventDefault();
+    console.table(this.contacto);
+    console.dir(this.form);
 
+  }
 }
