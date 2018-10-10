@@ -7,8 +7,6 @@ import { AppComponent } from './app.component';
 import { CoreModule } from './core/core.module';
 import { HomeModule } from './home/home.module';
 import { AboutModule } from './about/about.module';
-import { TareasModule } from './tareas/tareas.module';
-import { ContactosModule } from './contactos/contactos.module';
 
 import { registerLocaleData } from '@angular/common';
 import localeEs from '@angular/common/locales/es';
@@ -28,8 +26,6 @@ registerLocaleData(localeEs, 'es');
     CoreModule,
     HomeModule,
     AboutModule,
-    TareasModule,
-    ContactosModule,
     UsersModule
   ],
   providers: [],
