@@ -1,0 +1,32 @@
+<h4>Usuarios usando un servicio</h4>
+<div class="form-group">
+  <label for="">Numero de usuario</label>
+  <input type="text" class="form-control" name="userId" id="" 
+    [(ngModel)] = "idUser">
+  <small id="helpId" class="form-text text-muted">Help text</small>
+</div>
+<button type="button" class="btn btn-primary"
+(click)="onBuscar()">Buscar</button>
+&nbsp;
+<button type="button" class="btn btn-primary"
+(click)="onBorrar()">Borrar</button>
+
+<div class="form-group">
+  <label for="name">Nombre</label>
+  <input type="text" class="form-control" name="name" id="" [(ngModel)]="name">
+</div>
+<div class="form-group">
+  <label for="username">Apellido</label>
+  <input type="text" class="form-control" name="username" id="" [(ngModel)]="userName">
+</div>
+<button type="button" class="btn btn-primary"
+(click)="onNuevo()">Nuevo</button>
+&nbsp;
+<button type="button" class="btn btn-primary"
+(click)="onModificar()">Modificar</button>
+
+<div>
+  <ul class="list-group">
+    <li class="list-group-item" *ngFor="let usuario of aUsuarios">{{ usuario | json}}</li>
+  </ul>
+</div>

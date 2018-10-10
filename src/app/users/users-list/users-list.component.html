@@ -1,3 +1,4 @@
+<h4>Usuarios usando HttpClient</h4>
 <div class="form-group">
   <label for="">Numero de usuario</label>
   <input type="text" class="form-control" name="userId" id="" 
@@ -7,7 +8,7 @@
 <button type="button" class="btn btn-primary"
 (click)="onBuscar()">Buscar</button>
 <div>
-  <ul>
-    <li *ngFor="let usuario of aUsuarios">{{ usuario | json}}</li>
+  <ul class="list-group">
+    <li class="list-group-item" *ngFor="let usuario of aUsuarios">{{ usuario | json}}</li>
   </ul>
 </div>

@@ -22,6 +22,13 @@ export interface UsersIf {
     };
 }
 
+export class User  {
+  constructor(
+    public name: string = '',
+    public username: string = ''
+  ) {}
+}
+
 export class UserModel {
   constructor(
     public id: number,

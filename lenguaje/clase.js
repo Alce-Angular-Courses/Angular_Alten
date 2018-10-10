@@ -13,11 +13,10 @@ class Alumno extends Persona {
 
     saludar() {console.log(`Hola, soy ${this.name}`)}
 
-    
-
     saludarAsinc() {
         setTimeout(this.saludar.bind(this), 1000)
     }
+
 }
 
 let p1 = new Alumno('Pepe', 32, 'Angular')

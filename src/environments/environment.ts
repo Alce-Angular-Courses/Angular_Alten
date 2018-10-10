@@ -5,7 +5,8 @@
 export const environment = {
   production: false,
   urlBase: 'localhost:3000',
-  urlUsers: 'https://jsonplaceholder.typicode.com/users'
+  // urlUsers: 'https://jsonplaceholder.typicode.com/users'
+  urlUsers: 'http://localhost:3000/users'
 };
 
 /*

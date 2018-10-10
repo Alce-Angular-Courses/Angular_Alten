@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { environment } from '../../../environments/environment';
 import { HttpClient } from '@angular/common/http';
-import { UsersIf } from '../../models/users.model';
+import { User } from '../../models/users.model';
 
 
 @Component({
@@ -11,7 +11,7 @@ import { UsersIf } from '../../models/users.model';
 })
 export class UsersListComponent implements OnInit {
 
-  aUsuarios: Array<UsersIf>;
+  aUsuarios: Array<User>;
   url: string;
   idUser: number;
 
