@@ -7,8 +7,8 @@
   </div>
   <div *ngIf="aTareas.length" class="card-footer text-muted">
       <h4 class="card-title">Lista de Tareas</h4>
-      <ul *ngFor="let item of aTareas; let i = index" class="list-group">
-          <alt-tarea 
+      <ul class="list-group">
+          <alt-tarea *ngFor="let item of aTareas; let i = index" 
             [otarea]="{item: item, i:i}"
             (eventCompletar)="changeTarea($event)"
             (eventBorrar)="deleteTarea($event)"

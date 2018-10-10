@@ -13,8 +13,9 @@
   </div>
   <div *ngIf="aTareas.length" class="card-footer text-muted">
     <h4 class="card-title">Lista de Tareas</h4>
-    <ul *ngFor="let item of aTareas; let i = index" class="list-group">
-      <li class="list-group-item">
+    <ul class="list-group">
+      <li *ngFor="let item of aTareas; let i = index"
+        class="list-group-item">
         <input type="checkbox" id="" [(ngModel)]="item.isCompleted"
         (change)="completado()">
         <span [ngClass]="{completed: item.isCompleted}">{{item.nombre}}</span>
