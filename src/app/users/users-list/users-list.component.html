@@ -9,6 +9,8 @@
 (click)="onBuscar()">Buscar</button>
 <div>
   <ul class="list-group">
-    <li class="list-group-item" *ngFor="let usuario of aUsuarios">{{ usuario | json}}</li>
+    <li class="list-group-item"
+     *ngFor="let usuario of aUsuarios; let i = index">
+     <a [routerLink]="'/users/'+ i ">{{ usuario.name }}</a></li>
   </ul>
 </div>
